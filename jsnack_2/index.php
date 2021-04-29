@@ -15,19 +15,8 @@
     echo("I dati sono corretti.");
     } else {
     echo("C'e' un errore, inserisci di nuovo i dati.");
-    }
-
-    // if (filter_var($age, FILTER_VALIDATE_INT)) {
-    // echo("$age is a number");
-    // } else {
-    // echo("$age is not a number");
-    // }
-
-    // if (strlen($name) > 3) {
-    // echo("$name troppo corto");
-    // } else {
-    // echo("$name va bene");
-    // }
+  }
+  
     ?>
 
 
