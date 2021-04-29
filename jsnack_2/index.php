@@ -12,11 +12,11 @@
     $age = $_GET['getAge'];
 
     if (strlen($name) > 3 && filter_var($email, FILTER_VALIDATE_EMAIL) && filter_var($age, FILTER_VALIDATE_INT)) {
-    echo("I dati sono corretti.");
+    echo("Your info are correct. Thank you.");
     } else {
-    echo("C'e' un errore, inserisci di nuovo i dati.");
+    echo("An error was detected, please fill out the form again.");
   }
-  
+
     ?>
 
 
