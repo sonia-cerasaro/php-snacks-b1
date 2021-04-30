@@ -41,15 +41,38 @@
 
   <p>
     <?php
-    foreach ($posts as $row => $innerArray) {
-      foreach ($innerArray as $innerRow => $info) {
-        echo $row.' ' .':' .' ';
-        echo $info['title']. "<br>";
-      }
-    }
+
+    // foreach ($posts as $row => $innerArray) {
+    //   foreach ($innerArray as $innerRow => $info) {
+    //     echo $row.' ' .':' .' ';
+    //     echo $info['title']. "<br>";
+    //   }
+    // }
+
      ?>
   </p>
 
+  <?php
+
+  $post_keys = array_keys($posts);
+
+  for ($i=0; $i < count($post_keys) ; $i++) {
+    // var_dump($posts[$post_keys[$i]]);
+    
+    $posts_by_key = $posts[$post_keys[$i]];
+
+    for ($j=0; $j < count($posts_by_key) ; $j++) {
+      $post = $posts_by_key[$j];
+
+      // var_dump($posts_by_key[$j]);
+      echo $post_keys[$i] .'<br>';
+      echo $post['title'] .'<br>';
+      echo $post['author'] .'<br>';
+      echo $post['text'] .'<br>';
+    }
+  }
+
+   ?>
 
   </body>
 </html>
